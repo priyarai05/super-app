@@ -1,0 +1,157 @@
+.page{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    box-sizing: border-box;
+    padding: 4% 2.5% 4% 10%;
+    width: 65%;
+    height: 100%;
+}
+
+.userWidget{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    margin-bottom: 1.5%;
+    border-radius: 33px;
+    padding: 3%;
+    width: 100%;
+    height: 65%;
+    background-color: #5746EA;
+    color: var(--white);
+}
+
+.userWidget h3{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.userWidget h1{
+    margin: 10px;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.genreGrid{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pill{
+    width: 20%;
+    flex: 0 0 calc(50% - 60px);
+    background-color: #9F94FF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.right{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 4% 4% 4% 2.5%;
+}
+
+.weatherWidget {
+    box-sizing: border-box;
+    margin-top: 1.5%;
+    border-radius: 33px;
+    height: 100%;
+    width: 100%;
+    background-color: #101744;
+    color: white;
+}
+.weatherWidget .header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF4ADE;
+    padding: 2%;
+    border-radius: 33px 33px 0 0;
+}
+.weatherWidget .body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.weatherWidget .body h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.weatherWidget .body > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 5px; */
+}
+
+.weatherWidget .pressure .details{
+    display: flex;
+    align-items: center;
+}
+
+.verticalLine{
+    margin-top: auto;
+    height: 70px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: none;
+}
+
+.newsWidget{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 33px;
+}
+
+.newsWidget .header{
+    position: relative;
+    width: 100%;
+    height: 62%;
+    border: none;
+}
+
+.newsWidget .headerText{
+    width: inherit;
+    margin: 0px;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 1px;
+    color: white;
+    background-color: rgba(6, 0, 0, 0.5);
+}
+.newsWidget .header h1 {
+    font-size: 22px;
+    font-weight: 500;
+}
+.newsWidget .headerText h3{
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.newsWidget img{
+    border-radius: 33px 33px 0 0;
+    object-fit: cover;
+    width: inherit;
+    height: 100%;
+}
+
+.newsWidget .footer{
+    padding: 20px;
+}
